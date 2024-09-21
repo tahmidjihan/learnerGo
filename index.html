@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnerGo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header data-theme="dark">
+      <div class="navbar bg-base-200 text-primary">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl font-extrabold"
+            ><i class="fa-solid fa-chart-simple"></i>
+            LearnerGo
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="dropdown dropdown-left">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- header main  -->
+      <div class="bg-base-200 py-20">
+        <div class="hero-main">
+          <div class="text-center pt-10">
+            <div
+              class="md:max-w-md lg:max-w-[700px] flex flex-col justify-center mx-auto"
+            >
+              <h1 class="text-5xl font-bold">Welcome to LearnerGo!</h1>
+              <p>
+                Explore personalized learning resources and expert guidance to
+                reach your academic and career goals. Start your journey today!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cards flex flex-col lg:flex-row gap-10 align-middle justify-center mt-10"
+        >
+          <div class="card bg-base-100 w-80 shadow-xl mx-auto lg:mx-1">
+            <figure class="px-10 pt-10">
+              <i class="fa-solid fa-code text-primary text-6xl"></i>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Learn Web Development</h2>
+              <p>
+                Master HTML, CSS, and JavaScript with this beginner-friendly
+                course.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd course  -->
+
+          <div class="card bg-base-100 w-80 shadow-xl mx-auto lg:mx-1">
+            <figure class="px-10 pt-10">
+              <i class="fa-solid fa-database text-primary text-6xl"></i>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Learn Data Analysis</h2>
+              <p>
+                Learn to analyze data, uncover trends, and make informed
+                decisions with our Data Analysis course.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd course   -->
+
+          <div class="card bg-base-100 w-80 shadow-xl mx-auto lg:mx-1">
+            <figure class="px-10 pt-10">
+              <i class="fa-solid fa-bullhorn text-primary text-6xl"></i>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Learn Digital Marketing</h2>
+              <p>
+                Master digital marketing with strategies in SEO, social media,
+                and content marketing.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="courses" class="py-20">
+        <div class="section-header">
+          <div
+            class="md:max-w-md lg:max-w-[700px] flex flex-col justify-center mx-auto text-center"
+          >
+            <h1 class="text-5xl font-bold">Explore Our Courses</h1>
+            <p>
+              Discover a variety of expertly crafted courses designed to enhance
+              your skills and knowledge. Whether you're looking to advance your
+              career or learn something new, we have the perfect course for you!
+            </p>
+          </div>
+        </div>
+        <div class="cards flex gap-10 justify-center">
+          <div
+            class="card flex justify-center items-center min-h-screen lg:mx-1 mx-auto"
+          >
+            <div class="max-w-[720px] mx-auto">
+              <!-- Centering wrapper -->
+              <div
+                class="relative flex flex-col text-white bg-gray-800 shadow-md bg-clip-border rounded-xl w-96"
+              >
+                <div
+                  class="relative mx-4 mt-4 overflow-hidden text-white bg-white bg-clip-border rounded-xl h-96"
+                >
+                  <img
+                    src="https://pce.sandiego.edu/wp-content/uploads/2023/02/GettyImages-1411195926-scaled.jpg"
+                    alt="card-image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      Project Management
+                    </p>
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      by Google
+                    </p>
+                  </div>
+                  <p
+                    class="block font-sans text-sm antialiased font-normal leading-normal text-white opacity-75"
+                  >
+                    Learn project management essentials with Google’s expert-led
+                    course and boost your career.
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                    type="button"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd  -->
+          <div
+            class="card flex justify-center items-center min-h-screen lg:mx-1 mx-auto"
+          >
+            <div class="max-w-[720px] mx-auto">
+              <!-- Centering wrapper -->
+              <div
+                class="relative flex flex-col text-white bg-gray-800 shadow-md bg-clip-border rounded-xl w-96"
+              >
+                <div
+                  class="relative mx-4 mt-4 overflow-hidden text-white bg-white bg-clip-border rounded-xl h-96"
+                >
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQHYC_ZczxV2zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695524296879?e=2147483647&v=beta&t=rLMZ59ByIABpdPtfPZPZC65iXWG4zbht2eqKfWOdxRs"
+                    alt="card-image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      Graphics design
+                    </p>
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      by Canva
+                    </p>
+                  </div>
+                  <p
+                    class="block font-sans text-sm antialiased font-normal leading-normal text-white opacity-75"
+                  >
+                    Unleash your creativity and learn the essentials of graphic
+                    design, from typography to visual storytelling.
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                    type="button"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd  -->
+          <div
+            class="card flex justify-center items-center min-h-screen lg:mx-1 mx-auto"
+          >
+            <div class="max-w-[720px] mx-auto">
+              <!-- Centering wrapper -->
+              <div
+                class="relative flex flex-col text-white bg-gray-800 shadow-md bg-clip-border rounded-xl w-96"
+              >
+                <div
+                  class="relative mx-4 mt-4 overflow-hidden text-white bg-white bg-clip-border rounded-xl h-96"
+                >
+                  <img
+                    src="https://media.istockphoto.com/id/1403644222/photo/illustration-demonstrates-the-routing-of-ip-packets-throughout-the-internet-a-lan-computer.jpg?s=612x612&w=0&k=20&c=MCdnCecf2rfzLnsnivu5DOXL-6Ata-Sq6MGLvmXngPc="
+                    alt="card-image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      Python Fundamentals
+                    </p>
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      by IBM
+                    </p>
+                  </div>
+                  <p
+                    class="block font-sans text-sm antialiased font-normal leading-normal text-white opacity-75"
+                  >
+                    Get started with Python, one of the most popular programming
+                    languages, and build your coding skills.
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                    type="button"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4th  -->
+          <div
+            class="card flex justify-center items-center min-h-screen lg:mx-1 mx-auto"
+          >
+            <div class="max-w-[720px] mx-auto">
+              <!-- Centering wrapper -->
+              <div
+                class="relative flex flex-col text-white bg-gray-800 shadow-md bg-clip-border rounded-xl w-96"
+              >
+                <div
+                  class="relative mx-4 mt-4 overflow-hidden text-white bg-white bg-clip-border rounded-xl h-96"
+                >
+                  <img
+                    src="https://newportllc.com/wp-content/uploads/2023/05/Finance-the-Growth-of-Your-Business-in-a-Challenging-Financial-World.jpg"
+                    alt="card-image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      Finance Basics
+                    </p>
+                    <p
+                      class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900"
+                    >
+                      by Stripe
+                    </p>
+                  </div>
+                  <p
+                    class="block font-sans text-sm antialiased font-normal leading-normal text-white opacity-75"
+                  >
+                    Understand the fundamentals of financial accounting and
+                    learn how to manage and analyze financial data
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                    type="button"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="border-bottom border-1 border-gray-700 rounded-lg mx-20" />
+      <section id="explore">
+        <div class="section-header py-10 pl-16 text-4xl font-bold">
+          <h1>Explore LearnerGo</h1>
+        </div>
+        <div class="cards">
+          <div class="flex flex-wrap lg:mx-20 gap-10">
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://www.nexlevtech.com/assets/img/web-dev.jpg"
+                  alt="Web Development"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Web Development</h2>
+                <p>
+                  Learn to build websites and web applications from scratch.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=100&fit=clip&auto=format"
+                  alt="Data Analysis"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Data Analysis</h2>
+                <p>Unlock insights and make data-driven decisions.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/blog/posts/digital-marketing-skills.jpg&w=1200&h=630"
+                  alt="Digital Marketing"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Digital Marketing</h2>
+                <p>
+                  Master SEO, social media, and content marketing strategies.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://media.licdn.com/dms/image/D5612AQGUAQvqzwzuQA/article-cover_image-shrink_720_1280/0/1678557678868?e=2147483647&v=beta&t=9D4t8str-tvc5VoT2-eMHk05ftseMcUhQIdPicBbkkY"
+                  alt="Graphic Design"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Graphic Design</h2>
+                <p>Learn the principles of design and visual communication.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/monday-blogs/fl_lossy,f_auto,q_auto/wp-blog/2020/12/enterprise-img.jpeg"
+                  alt="Project Management"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Project Management</h2>
+                <p>Gain essential skills to manage projects effectively.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://www.dicsinnovatives.com/blog/wp-content/uploads/2023/08/python-blog-image.jpg"
+                  alt="Python Programming"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Python Programming</h2>
+                <p>
+                  Start coding with Python and build your programming skills.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://fekrait.com/uploads/topics/16693014736162.png"
+                  alt="Financial Accounting"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Financial Accounting</h2>
+                <p>
+                  Understand the basics of financial management and reporting.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg"
+                  alt="Cybersecurity"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Cybersecurity</h2>
+                <p>Learn to protect systems and networks from cyber threats.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://kartikmehtablog.com/wp-content/uploads/2022/12/AdobeStock_419269782-scaled.jpeg"
+                  alt="UX/UI Design"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">UX/UI Design</h2>
+                <p>
+                  Design user-friendly interfaces and enhance user experiences.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 image-full w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/6009035/cover_image/optimized/0817_Mastering-SaaS-Implementation-Projects-Four-Tips-to-Success_BLOG_draft_7-4f9833ae69b26e7b95f0fd62f50f1642.png"
+                  alt="Cloud Computing"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Cloud Computing</h2>
+                <p>
+                  Discover cloud technologies and their impact on businesses.
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
